@@ -1,7 +1,11 @@
 <?php
+/*
+    Program to generate Coupan Number
+*/
 class CouponNumber
 {
-    public static function coupon($n, $distinctArray)
+
+    public static function findCoupon($n, $distinctArray)
     {
         $couponCount = 0;
         $randomCount = 0;
@@ -26,10 +30,9 @@ class CouponNumber
         return $randomCount;
     }
 }
-
-$n = readline('Enter Number of Coupons : ');
+$n = readline('How many Coupans you want : ');
 $distinctArray = new SplFixedArray($n);
-echo "No.of Randoms Generated: " . CouponNumber::coupon($n, $distinctArray) . "\n";
+echo "No.of Randoms Generated: " . CouponNumber::findCoupon($n, $distinctArray) . "\n";
 echo "Distinct Coupons: \n";
 for ($k = 0; $k < $n; $k++) {
     echo $distinctArray[$k] . " ";

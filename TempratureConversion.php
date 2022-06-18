@@ -28,6 +28,5 @@ class Temprature
         }
     }
 }
-
 Temprature::convertTemp();
 ?>

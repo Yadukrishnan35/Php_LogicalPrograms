@@ -1,7 +1,7 @@
 <?php
     class MoneyVendingMechine {
         static function findMoney($money,$moneyArray) {
-                while($money>0){//5568
+                while($money>0){
                     if($money>=1000) {
                         $notes = floor($money/1000);
                         $money = $money - ($notes*1000);

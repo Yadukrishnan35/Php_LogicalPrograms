@@ -4,8 +4,8 @@
       
         $n = 12 * $years;
         $r = $rate / (12 * 100);
-        $payment  = ($p * $r) / (1 - pow(1 + $r, $n));
-        echo "Monthly Payment:".abs($payment);
+        $payment  = ($p * $r) / (1 - pow(1 + $r, -$n));
+        echo "Monthly Payment:".round($payment,2);
         }
     
     }
